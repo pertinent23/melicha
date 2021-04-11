@@ -1,0 +1,248 @@
+@font-face{
+    src: url( "./../Roboto/Roboto-Light.ttf" ),
+        url( "./../Roboto/Roboto-Regular.ttf" ),
+        url( "./../Roboto/Roboto-Roboto-Thin.ttf" ),
+        url( "./../Roboto/Roboto-Bold.ttf" );
+    font-family: roboto;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+*{
+    font-family: roboto;
+    font-weight: thin;
+}
+
+body #main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #FF705F;
+    background-image: url( "./../img/background.svg" );
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+body #login-box{
+    display: flex;
+    position: relative;
+    width: calc( 100% - 20px );
+    max-width: 800px;
+    height: 430px;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+body #login-box .parts{
+    display: flex;
+    position: relative;
+    flex: 1;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body #login-box .first{
+    background-color: #EFABA1;
+}
+
+body #login-box .first .start{
+    display: flex;
+    width: 100%;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+body #login-box .first .start .icon{
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+body #login-box .first .icon img{
+    display: inline-block;
+    position: relative;
+    max-height: 100%;
+    max-width: calc( 100% - 30px );
+    margin-top: 10%;
+}
+
+body #login-box .end{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+}
+
+body #login-box .end img{
+    display: inline-block;
+    position: absolute;
+    bottom: -30px;
+    left: 10px;
+}
+
+body #login-box .end .message{
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+body #login-box .message label{
+    color: #FFFFFF;
+    font-size: 0.9em;
+    text-align: center;
+    font-weight: 600;
+}
+
+body #login-box .second .title{
+    display: flex;
+    width: calc( 100% - 70px );
+    height: 130px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+body #login-box .second .title label:nth-child( 1 ){
+    color: #212428;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+body #login-box .second .title label:not( :nth-child( 1 ) ){
+    color: #BFB6B5;
+    font-size: 0.9em;
+}
+
+body #login-box .second .title label a{
+    text-decoration: none;
+    color: #FE705F;
+    cursor: pointer;
+}
+
+body #login-box .second .container{
+    display: flex;
+    position: relative;
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body #login-box .second .container .field{
+    display: flex;
+    position: relative;
+    width: calc( 100% - 20px );
+    height: auto;
+    padding: 5px;
+    background-color: #FCFCFC;
+    border-radius: 3px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body #login-box .second .container .field .name{
+    display: flex;
+    position: relative;
+    height: 50px;
+    width: calc( 100% - 30px );
+    padding-left: 30px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body #login-box .second .container .name label{
+    color: #212428;
+    font-size: 0.9em;
+}
+
+body #login-box .second .container .input-container{
+    display: flex;
+    position: relative;
+    width: calc( 100% - 30px );
+    padding-left: 30px;
+    height: 50px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+body #login-box .second .container .input-container input{
+    display: inline-block;
+    height: 35px;
+    width: 235px;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 0px 5px #EEEEEE;
+    border-radius: 3px;
+    outline: none;
+    padding-left: 15px;
+    transition-duration: 0.2s;
+}
+
+body #login-box .second .container .input-container input:hover{
+    border-color: #FF705F;
+}
+
+body #login-box .second .container .input-container input:focus{
+    border-color: #FF705F;
+}
+
+body #login-box .second .content-submit{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+body #login-box .second .content-submit input{
+    display: flex;
+    position: relative;
+    height: 38px;
+    padding: 0px 70px;
+    text-align: center;
+    border: 0px;
+    background-color: #FF2B1D;
+    color: #FFFFFF;
+    font-size: 0.8em;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+@media screen and ( max-width: 600px ) {
+    body #login-box{
+        padding: 30px 0px;
+    }
+
+    body #login-box .first{
+        display: none;
+    }
+
+    body #login-box .second{
+        max-width: 450px;
+    }
+}

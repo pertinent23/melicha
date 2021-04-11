@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="1000">
+    <path 
+        d="
+            M1020 0 C1020 0 1120 250 520 480, 520 480 250 750 1370 1030
+            M1050 0 C1050 0 1150 250 550 500, 550 500 300 750 1400 1000
+            M1080 0 C1080 0 1180 250 580 520, 580 520 350 750 1430 970" 
+        stroke-linecap="round"
+        stroke-width="0.8"
+        stroke-opacity="1"
+        stroke="#FFFFFF"
+        fill="transparent"
+    />
+</svg>
